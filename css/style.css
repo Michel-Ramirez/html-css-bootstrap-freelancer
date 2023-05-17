@@ -53,3 +53,6 @@ a {
     ;
 }
 
+.about {
+    border: 1px dashed red;
+}
