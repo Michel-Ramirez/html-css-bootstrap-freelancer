@@ -1,58 +1,109 @@
-header {
-    border: 1px dashed blue;
-}
+/***** GENERICS *****/
 
-footer {
-    border: 1px dashed red;
-}
 
 a {
     text-decoration: none;
-    color:black
 }
 
-/* LAYOUT */
-
-.jumbotron {
-    height: 400px;
-    border: 2px dashed red;
+h2 {
+    font-weight: 600;
+    margin-bottom: 20px;
 }
 
-.jumbotron .col-sm-12, .jumbotron .col-md-6 {
-    height: 400px;
-    border: 2px dashed purple;
+.horizontal-rule {
+    width: 100px;
+    height: 20px;
+    border-bottom: 5px solid white;
+    margin: 0 10px;
 }
 
-.container-sm {
-    border: 2px dashed blue;
+/* !UTILITY */
+
+/* PALET */
+
+.bg-dark-blue {
+    background-color: #2C3E50;
 }
 
-.portfolio .col-sm-12:first-child, .about .col-sm-12:first-child, .about .col-sm-12:last-child, .form .col-sm-12:first-child, .form .col-sm-12:last-child  {
-    height: 100px;
-    border: 1px dashed green;
+.bg-blue {
+    background-color: #3A546D;
 }
 
-.portfolio .col-sm-12, .about .col-sm-12, .form .col-sm-12 {
-    height: 400px;
-    border: 1px dashed green;
+.bg-marine-green {
+    background-color: #1ABC9C;
 }
 
-.address .col-sm-12:first-child {
-    height: 100px;
-    border: 1px dashed green;
+/* !STYLE */
+
+/* ***** HEADER ***** */
+
+.navbar-brand {
+    color: white;
+    font-size: 2rem;
 }
 
-.address .col-sm-12:last-child {
-    height: 200px;
-    border: 1px dashed green;
+.navbar-nav .nav-link{
+    color: white;
 }
 
-.address .col-sm-12 {
-    height: 150px;
-    border: 1px dashed green;
-    ;
+/* *****JUMBOTRON ***** */
+
+
+.jumbotron img {
+    width: 300px;
 }
 
-.about {
-    border: 1px dashed red;
+/* ***** PORTFOLIO ***** */
+
+.portfolio .horizontal-rule, .form .horizontal-rule {
+    border-bottom: 5px solid #2C3E50;
+}
+
+.portfolio .fa-star, .form .star {
+    color: #2C3E50;
+}
+
+/* ***** ABOUT ***** */
+
+
+.about p {
+    color: white;
+    font-weight: 600;
+}
+
+/* ***** FORM ***** */
+
+
+.form .form-control::placeholder {
+    color: #2C3E50;
+    font-weight: 600;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+.form .form-control {
+    border-radius: 0;
+    border-width: 0 0 1px 0;
+}
+
+.form .btn-success{
+    background-color: #1ABC9C;
+}
+
+
+/* ***** ADDRESS ***** */
+
+
+.address p {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.fa-facebook-f, .fa-google-plus-g, .fa-twitter, .fa-linkedin {
+    padding: 15px 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: 0 10px;
 }

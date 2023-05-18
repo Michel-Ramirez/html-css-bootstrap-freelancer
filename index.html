@@ -4,92 +4,170 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
     <title>Bootstrap Freelancer</title>
 </head>
 <body>
-    <header class="py-3">
+    <header class="bg-dark-blue text-white">
         <div class="container">
-            <div class="row justify-content-between align-items-center px-3">
-                <div class="col-7">
-                    <h1>START BOOTSTRAP</h1>
+            <nav class="navbar navbar-expand-md bg-body-tertiary fw-bold">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">START BOOTSTRAP</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse flex-grow-0" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                      <a class="nav-link " aria-current="page" href="#portfolio">PORTFOLIO</a>
+                      <a class="nav-link" href="#about">ABOUT</a>
+                      <a class="nav-link" href="#contact">CONTACT</a>
+                    </div>
+                  </div>
                 </div>
-                <!-- SANDWICH MENU -->
-                <div class="col-5 d-md-none text-end">
-                    <i class="fa-solid fa-bars fa-2xl" role="button"></i>
-                </div>
-                <!-- LIST MENU -->
-                <div class="col-5 d-none d-md-block">
-                    <ul class="list-inline-item d-flex mb-0 w-100 justify-content-md-end">
-                        <li class="list-inline-item"><a href="#">PORTFOLIO</a></li>
-                        <li class="list-inline-item"><a href="#">ABOUT</a></li>
-                        <li class="list-inline-item"><a href="#">CONTACT</a></li>
-                    </ul>
-                </div>
-            </div>
+              </nav>
         </div>
     </header>
     <main>
         <!-- JUMBOTRON -->
-        <section class="jumbotron">
+        <section class="jumbotron bg-marine-green pt-5">
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-sm-12 col-md-6">
-                        <div class="avatar">AVATAR</div>
+                <div class="row">
+                    <div class="col">
+                        <img src="img/avatar.svg" class="img-fluid mx-auto d-block mb-2" alt="">
+                        <h1 CLASS="fw-bold text-white text-center mb-3">STAR BOOTSTRAP</h1>
+                        <div class="d-flex w-100 justify-content-center mb-2">
+                            <div class="horizontal-rule"></div>
+                            <i class="fa-solid fa-star text-white fa-2x"></i>
+                            <div class="horizontal-rule"></div>
+                        </div>
+                        <h5 class="text-white fw-bold text-center mb-5">GRAPHIC ARTIST - WEB DESIGNER - ILLUSTRATOR</h5>
                     </div>
                 </div>
             </div>
         </section>
         <!-- PORTFOLIO SECTION -->
-        <section class="portfolio mb-5">
-            <div class="container-sm">
+        <section class="portfolio my-5">
+            <div class="container">
                 <div class="row">
-                    <div class="col-sm-12 text-center">PORTFOLIO + STAR DIVISOR</div>
-                    <div class="col-sm-12 col-md-6 col-lg-4">IMG</div>
-                    <div class="col-sm-12 col-md-6 col-lg-4">IMG</div>
-                    <div class="col-sm-12 col-md-6 col-lg-4">IMG</div>
-                    <div class="col-sm-12 col-md-6 col-lg-4">IMG</div>
-                    <div class="col-sm-12 col-md-6 col-lg-4">IMG</div>
-                    <div class="col-sm-12 col-md-6 col-lg-4">IMG</div>
+                    <div class="col-sm-12 text-center mb-3">
+                        <h2 id="portfolio">PORTFOLIO</h2>
+                        <div class="d-flex w-100 justify-content-center">
+                            <div class="horizontal-rule"></div>
+                            <i class="fa-solid fa-star fa-2x"></i>
+                            <div class="horizontal-rule"></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 pb-3">
+                        <img src="img/cabin.png" class="img-fluid mx-auto d-block rounded" alt="Cabin">
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 pb-3">
+                        <img src="img/cake.png" class="img-fluid mx-auto d-block rounded" alt="Cake">
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 pb-3">
+                        <img src="img/circus.png" class="img-fluid mx-auto d-block rounded" alt="Circus">
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 pb-3">
+                        <img src="img/game.png" class="img-fluid mx-auto d-block rounded" alt="Game">
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 pb-3">
+                        <img src="img/safe.png" class="img-fluid mx-auto d-block rounded" alt="Safe">
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 pb-3">
+                        <img src="img/submarine.png" class="img-fluid mx-auto d-block rounded" alt="Submarine">
+                    </div>
                 </div>     
             </div>
         </section>
         <!-- ABOUT SECTION -->
-        <section class="about px-5 mb-5">
-            <div class="container-sm">
+        <section class="about bg-marine-green px-5">
+            <div class="container">
                 <div class="row">
-                    <div class="col-sm-12 text-center text-md-center">ABOUT</div>
-                    <div class="col-sm-12 col-md-6">ABOUT DESCRIPTION</div>
-                    <div class="col-sm-12 text-center text-md-center">BTN DOWNLOAD</div>
+                    <div class="col-sm-12 text-center text-md-center">
+                        <h2 id="about" class="mt-4 text-white">ABOUT</h2>
+                        <div class="d-flex w-100 justify-content-center">
+                            <div class="horizontal-rule"></div>
+                            <i class="fa-solid fa-star fa-2x text-white"></i>
+                            <div class="horizontal-rule"></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 pt-4 px-5">
+                        <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+                    </div>
+                    <div class="col-sm-12 col-md-6 px-5">
+                        <p> Whether you're a student looking to showcase your work, a professional looking to attracr clients, or a graphic artist looking to share your projects starting point!</p>
+                    </div>
+                    <div class="col-sm-12 text-center text-md-center pb-4">
+                        <button type="button" class="btn btn-outline-light"><i class="fa-solid fa-download pe-1"></i>Download</button>
+                    </div>
                 </div>
             </div>
         </section>
         <!-- FORM SECTION -->
         <section class="form px-5 mb-5">
-            <div class="container-sm">
-                <div class="row">
-                    <div class="col-sm-12 text-center">CONTACT ME</div>
-                    <div class="col-sm-12">FORM</div>
-                    <div class="col-sm-12">BTN SEND</div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-12 text-center my-5">
+                        <h2 id="contact" class="mt-4">CONTACT ME</h2>
+                        <div class="d-flex w-100 justify-content-center">
+                            <div class="horizontal-rule"></div>
+                            <i class="fa-solid fa-star fa-2x"></i>
+                            <div class="horizontal-rule"></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-10 col-lg-6">
+                        <form action="">
+                            <form>
+                                <div class="mb-1">
+                                  <input type="fname" class="form-control" id="name" placeholder="Name">
+                                </div>
+                                <div class="mb-1">
+                                    <input type="email" class="form-control" id="email" placeholder="Email Address">
+                                </div>
+                                <div class="mb-1">
+                                    <input type="tel" class="form-control" id="tel" placeholder="Phone Number">
+                                </div>
+                                <textarea class="form-control" placeholder="Message"></textarea>
+                                <button type="submit" class="btn btn-success mt-3">Submit</button>
+                              </form>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
         <!-- ADDRESS SECTION -->
-        <section class="address text-center">
-            <div class="container-sm">
+        <section class="address text-center bg-blue text-white py-5">
+            <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-sm-12 col-md-4">LOCATION</div>
-                    <div class="col-sm-12 col-md-4">ARAOUND THE WEB</div>
-                    <div class="col-sm-12 col-md-4">ABOUT FREELANCER</div>
+                    <div class="col-sm-12 col-md-4 pb-3">
+                        <p>LOCATION</p>
+                        <P>2215 John Daniel Drive Clark, MO 54243</P>
+                    </div>
+                    <div class="col-sm-12 col-md-4 mb-3">
+                       <p>ARAOUND THE WEB</p>
+                       <i class="fa-brands fa-facebook-f"></i>
+                       <i class="fa-brands fa-google-plus-g"></i>
+                       <i class="fa-brands fa-twitter"></i>
+                       <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <p>ABOUT FREELANCER</p>
+                        <p>Freelance is a free to use, open source Bootstrap theme created by <span>Start Bootstrap</span></p>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="m-5">
-        <div class="text-center">COPYRIGHT</div>
+    <footer class="p-5 bg-dark-blue">
+        <div class="text-center text-white">
+            <span>Copyright</span>
+            <i class="fa-regular fa-copyright"></i>
+            <span>Your Website 2019</span>
+        </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 </body>
 </html>
