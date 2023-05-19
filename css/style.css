@@ -33,6 +33,10 @@ h2 {
     background-color: #1ABC9C;
 }
 
+.cl-marine-green {
+    color:#1ABC9C;
+}
+
 /* !STYLE */
 
 /* ***** HEADER ***** */
@@ -103,7 +107,7 @@ h2 {
 }
 
 .fa-facebook-f, .fa-google-plus-g, .fa-twitter, .fa-linkedin {
-    padding: 15px 20px;
+    padding: 15px 20px;     /* da fare on width e height */
     border: 1px solid white;
     border-radius: 50%;
     margin: 0 10px;
